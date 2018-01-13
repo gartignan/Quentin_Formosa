@@ -1,0 +1,128 @@
+*{
+	font-size:16px;
+}
+
+#logo {
+	margin-top : -15px;
+}
+
+.navbar{
+	background-color : white;
+	padding : 5px;
+	font-family : Tahoma, Arial
+}
+
+.row{
+	margin-top : 15px;
+}
+
+.main-picture{
+	margin-top:-20px;
+}
+
+.training > div{
+	border : 1px solid black;
+	padding : 10px;
+	border-radius : 10px;
+	box-shadow: 5px 5px 10px #888888;
+	height : 450px;
+}
+
+.title{
+	margin-top : 0px;
+	height : 50px;
+}
+
+.description{
+	height : 150px;
+	overflow : hidden;
+}
+
+.illustration{
+	margin : auto;
+	max-height : 100px;
+	text-align : center;
+}
+
+.subtitle{
+	height : 50px;
+}
+.training  button{
+	//margin-left : 5%;
+	position : absolute;
+	bottom : 10px;
+	left : 5%;
+	width : 90%;
+	
+}
+
+.title{
+	margin-top : 10px;
+	color : rgb(126,11,7);
+	font-weight : bold;
+	font-family : Tahoma, Arial;
+	font-size : 1.4em;
+}
+
+ul{
+	list-style-type : disc;
+}
+li ul li {
+	font-size : 1.3em;
+	
+	
+}
+
+h2 {
+	color : rgb(126,11,7);
+	font-weight : bold;
+	font-family : Tahoma, Arial;
+	font-size : 1.5em;
+}
+
+h1 {
+	color : rgb(126,11,7);
+	font-weight : bold;
+	font-family : Tahoma, Arial;
+	font-size : 2em;
+}
+
+.modal-body input {
+	width : 100%;
+	margin-top : 10px;
+	border-radius : 5px;
+}
+
+.modal-body textarea {
+	width : 100%;
+	margin-top : 10px;
+	border-radius : 5px;
+}
+
+.desc{
+	border : 1px solid black;
+	border-radius : 10px;
+	box-shadow: 5px 5px 10px #888888;
+	
+}
+
+.desc ul{
+	list-style : none;
+	margin-left : -20px;
+	margin-top:20px;
+}
+
+.devis{
+	margin : 5px;
+	text-align : center;
+	width : 100%;
+	
+}
+
+.highlight{
+	font-weight : bold;
+}
+
+.plan{
+	margin-top : 20px;
+}
