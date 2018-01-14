@@ -1,0 +1,149 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation Hibernate</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				<p>Hibernate est un framework populaire implémentant le standard JPA. Ce Framework permet de sérialiser efficacement une modèlisation objet en base de données, la modification et la suppression.</p>
+			
+				<ol>
+				<li class="title">Introduction</li>
+					<ul>
+							<li>Différents type de persistance</li>
+							<li>Serialisation</li>
+							<li>Persistance XML</li>
+							<li>GSON pour du JSON</li>
+							<li>Le besoin</li>
+							<li>Présentation de JPA et Hibernate</li>
+					</ul>.
+				<li class="title">Démarrage rapide avec le Framework</li>
+					<ul>
+							<li>Choix de l'IDE, Eclipse vs IntelliJ IDEA</li>
+							<li>Utilisation de Apache Maven</li>
+							<li>Utilisation simple d'hibernate</li>
+							<li>Mapping en utilisant du XML</li>
+							<li>Mapping en utilisant des annotations</li>
+					</ul>
+
+				<li class="title">Mapping Objet Relationnel</li>
+					<ul>
+							<li>Tranformation du modèle objet en modèle relationnel</li>
+							<li>L'association (Cardinalités 0..1, 1..1, 1..n, n..1, n..n)</li>
+							<li>Associations multiple</li>
+							<li>Associations de composition</li>
+							<li>Associations réflexive</li>
+							<li>L'héritage</li>
+							<li>Gestion des types énumérés (Texte et Ordinal)</li>
+							<li>Etude des Annotations et mise en oeuvre</li>
+					</ul>
+				<li class="title">Opération CRUD, HQL et JQL</li>
+					<ul>
+							<li>CRUD (Create, Read Update, Delete)</li>
+							<li>Utilisation des managers</li>
+							<li>Association et cascading</li>
+							<li>Différents type de Fetching (Eager, Lazy)</li>
+							<li>Etude des points de vigilance</li>
+							<li>Le HQL (Hibernate Query Language)</li>
+							<li>Le JQL (JPA Query Language)</li>
+							<li>Création de requêtes avec jointure</li>
+							<li>Projection et sous objets<li>
+							<li>Utilisation de l'API Criteria</li>
+					</ul>
+				
+				<li class="title">Hibernate Avancé</li>
+					<ul>
+							<li>Principe des transactions (ACID)</li>
+							<li>Différents niveau d'isolation des transactions</li>
+							<li>Modification du niveau d'isolation</li>
+							<li>Gestion des verrouillages et des accès concurrents</li>
+							<li>Gestion du cache de niveau 1 et 2</li>
+							<li>Statistiques</li>
+					</ul>
+					
+				<li class="title">Les outils autour d'Hibernate</li>
+					<ul>
+							<li>Outils de reverse engineering</li>
+							<li>Outils de génération de base de données</li>
+							<li>Intégration d'hibernate dans Spring</li>
+							<li>Intégration d'hibernate dans Java EE</li>
+					</ul>
+					
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>2 à 3 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>Connaissance en Java de base</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation Hibernate"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>

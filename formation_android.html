@@ -1,0 +1,160 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation Android</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				<p>Développez des application Android. Apprenez à gérer les interfaces graphique et l'interaction avec les composants, gérer les modèles de composants la conception de tâche asynchrone, l'integration de web Service et la captures des données GPS, des capteurs etc.</p>
+			
+				<ol>
+				
+				<li class="title">Introduction</li>
+						<ul>
+							<li>Présentation d'Android</li>
+							<li>Présentation d'Android Studio</li>
+							<li>Context et marché des téléphone Android</li>
+							<li>Spécificité de la programmation sur mobiles</li>
+						</ul>
+				<li class="title">Application Android</li>
+						<ul>
+							<li>Description d'une application Android</li>
+							<li>Les Ressources</li>
+							<li>Les Layout</li>
+							<li>Les Activités</li>
+							<li>Les Services</li>
+						</ul>
+				<li class="title">L'interface graphique</li>
+						<ul>
+							<li>Différents composants d'une interface</li>
+							<li>Les groupes de composants (les layouts)</li>
+							<li>Gestion des String</li>
+							<li>Gestion des couleurs et du thème</li>
+						</ul>
+				<li class="title">Gestion des ressources</li>
+						<ul>
+							<li>Présentation des différentes ressources (drawables, layout, menus, string, values etc.)</li>
+							<li>Gestion des conditions (Orientation, Langue, taille d'écran)</li>
+							<li>Internationalisation (i18n)</li>
+							<li>Gestion des Ressources dynamiquement dans l'activité</li>
+						</ul>	
+				<li class="title">Les activités</li>
+						<ul>
+							<li>Présentation des activités</li>
+							<li>Cycle de vie des activités</li>
+							<li>Différents types d'événements</li>
+							<li>Evénements souris</li>
+							<li>Evénements claviers</li>
+							<li>Passer d'une activité à une autre</li>
+							<li>Passage de paramètre entre activités</li>
+						</ul>
+				<li class="title">Le modèle de composants</li>
+						<ul>
+							<li>Création de modèle de composants</li>
+							<li>Les listes</li>
+							<li>Utilisation du ArrayAdapter</li>
+							<li>Utilisation du SimpleAdapter</li>
+							<li>Utilisation du CursorAdapter</li>
+						</ul>
+				<li class="title">Les services</li>
+						<ul>
+							<li>Création de Service et d'IntentService</li>
+							<li>Création de tâche Asynchrone</li>
+							<li>Gestion du réseau</li>
+							<li>Récupération de données par des services Rest</li>
+						</ul>		
+				<li class="title">La persistance des données</li>
+						<ul>
+							<li>Gestion de la persistance des données</li>
+							<li>Gestion par fichier</li>
+							<li>Gestion par les préférences partagées</li>
+							<li>Gestion par la base de données</li>
+							<li>La persistance en XML</li>
+						</ul>
+				<li class="title">Compléments</li>
+						<ul>
+							<li>Utilisation de la carte Google</li>
+							<li>Récupération des coordonnées GPS</li>
+							<li>Récupération des capteurs : accéléromètre, gravité, magnétisme etc.</li>
+							<li>Gérer les autorisations</li>
+							<li>Les animations des composants</li>
+						</ul>
+					
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>4 à 5 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>Connaissance en Java de base</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation Android"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>

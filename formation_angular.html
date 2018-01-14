@@ -1,0 +1,161 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation Angular 4 (AngularJS)</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				<p>Angular JS est un framework qui n'a pas cessé de surprendre de part sa simplificité et sa structuration des ressources. Apprenez l'un des framework les plus populaire pour la conception web.</p>
+			
+				<ol>
+					<li class="title">Présentation d’AngularJS</li>				
+						<ul>
+							<li>Problématiques actuelles sur les Framework de développement</li>
+							<li>Positionnement, Apport d’AngularJS et Philosophie d’AngularJS</li>
+							<li>Évolution du Framework dans le temps :  Qu’est-ce que le TypeScript</li>
+						</ul>
+					<li class="title">Démarrage Rapide</li>
+						<ul>
+							<li>Installation NodeJS et de NPM</li>
+							<li>Création d’un nouveau projet</li>
+							<li>ng serve – Servir l’application</li>
+							<li>Etude sur la composition d’un projet</li>
+							<li>TP : mise en place d’un projet rapidement et modification simple</li>
+						</ul>
+					<li class="title">Concept de Composant sous AngularJS</li>
+						<ul>
+							<li>Structure d’un composant</li>
+							<li>Classe d’un composant</li>
+							<li>Template HTML et URL</li>
+							<li>Feuille de style d’un composant</li>
+							<li>Sélecteur d’un composant</li>
+							<li>Imbrication d’un composant</li>
+							<li>TP : mise en place de composant simple et imbrication de composants</li>
+						</ul>
+						
+					<li class="title">Binding et Classes</li>
+						<ul>
+							<li>Principe du Binding</li>
+							<li>One-way binding</li>
+							<li>Création de Formulaire</li>
+							<li>2-way binding</li>
+							<li>TP : Établir un modèle de données, afficher des données et les modifier</li>
+						</ul>
+						
+					<li class="title">Boucles, Structure conditionnelles et CSS</li>
+						<ul>
+							<li>Afficher des listes d’éléments avec le ngFor</li>
+							<li>Affichage conditionnel avec le ngIf</li>
+							<li>Modification conditionnelle du style CSS</li>
+							<li>TP : Manipulation du ngFor, ngIf et des classes CSS</li>
+						</ul>
+						
+						<li class="title">Maitriser les Composants sous AngularJS</li>
+						<ul>
+							<li>Mise en pratique des composants sur un exemple concret</li>
+							<li>Maitrise une vue Master/Details</li>
+							<li>TP : Établir une vue maitre/details avec une liste et une vue détaillée</li>
+						</ul>
+						
+						<li class="title">Les Services</li>
+
+						<ul>
+							<li>Présentation du concept des services</li>
+							<li>Injection de services dans un composant</li>
+							<li>Appel des méthodes d’un service</li>
+							<li>Appel synchrone et Asynchrone avec la notion de promise</li>
+							<li>TP : Mise en place des services, Gestion et Synchrone et asynchrone des appels</li>
+						</ul>
+						
+						<li class="title">Le Routage et paramètre</li>
+						<ul>
+							<li>Création de règle de routage</li>
+							<li>Passage de paramètres</li>
+							<li>TP : Application multi-composants et routage</li>
+						</ul>
+						
+						<li class="title">API les webservices</li>
+						<ul>
+							<li>Connexion a des webServices pour récupérer des données</li>
+							<li>Différentes méthodes GET, POST, PUT, DELETE</li>
+							<li>TP : Récupération, Insertion, Modification et suppression de données via une API Rest</li>
+						</ul>
+					
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>4 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>Aucun</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation Angular"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>

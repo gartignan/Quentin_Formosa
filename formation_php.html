@@ -1,0 +1,134 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation PHP</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				<p>Cette formation présente le developpement en PHP. Elle présente les notions du langage et le developpement dynamique de site web</p>
+			
+				<ol>
+				
+				<li class="title">Introduction</li>
+						<ul>
+							<li>Architecture Client Serveur</li>
+							<li>HTML, CSS, JavaScript et PHP : Présentation du SI</li>
+							<li>Protocole HTTP</li>
+							<li>Différence PHP4, PHP5 et PHP7</li>
+							<li>Exemple de Script PHP</li>
+						</ul>
+				<li class="title">Le langage PHP</li>
+						<ul>
+							<li>Commentaires</li>
+							<li>Les variables</li>
+							<li>Les fonctions</li>
+							<li>Les bibliothèques</li>
+							<li>Structures de contrôle</li>
+							<li>Structures conditionnelles</li>
+							<li>Les boucles</li>
+							<li>Les flux</li>
+							<li>Les Tableaux (Array)</li>
+							<li>Les Tableaux Associatifs</li>
+							<li>Les fonctions sur les tableaux</li>
+						</ul>
+				<li class="title">Les formulaires</li>
+						<ul>
+							<li>Formulaire en POST et GET</li>
+							<li>Passage des paramètres $_POST et $_GET</li>
+							<li>Exemple de login et mot de passe</li>
+						</ul>	
+				<li class="title">Les Sessions</li>
+						<ul>
+							<li>Variables : Les cookies et les sessions</li>
+							<li>Les sessions sur le serveur</li>
+							<li>Exemple d'utilisation</li>
+							<li>Session et haute disponibilité</li>
+						</ul>	
+				<li class="title">Connexion à une base de données SQL et NoSQL</li>
+						<ul>
+							<li>Présentation des bases de données</li>
+							<li>Présentation de MySQL.</li>
+							<li>Concepts fondamentaux : bases, tables, champs, enregistrements.</li>
+							<li>Exemple de connexion et de CRUD sur une base SQL(Create, Read, Update, Delete)</li>
+							<li>Présentation de MongoDB et de CassandraDB</li>
+							<li>Exemple de connexion et de CRUD sur une base NoSQL (Create, Read, Update, Delete)</li>
+						</ul>
+					
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>3 à 4 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>Aucun</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation PHP"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>

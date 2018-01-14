@@ -1,0 +1,120 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation Responsive Web Design avec Bootstrap</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				<p>Le Responsive Web Design sont les techniques permettant de concevoir un site adaptable pour toutes les appareil, mobile, tablet et ordinateur de bureau. Elles se fondent sur les media queries, et des framework comme Bootstrap.</p>
+			
+				<ol>
+
+					<li class="title">Introduction</li>
+						<ul>
+							<li>Introduction au Responsive Web Design (exemples)</li>
+							<li>Principe et méthodes : Grille, Media Queries, Pourcentage</li>
+							<li>Présentation des différentes méthodes</li>
+							<li>Connaître son public d’écrans (étude statistiques)</li>
+						</ul>
+					<li class="title">Les média queries</li>
+						<ul>
+							<li>Syntaxe des média queries</li>
+							<li>Exemple de base des média queries</li>
+							<li>Positionner les éléments avec les média queries</li>
+							<li>Tester son design : émulateurs du navigateur, browserstack</li>
+							<li>Balise méta pour l’adaptation du viewport</li>
+						</ul>
+					<li class="title">Les images</li>
+						<ul>		
+							<li>Positionnement d’image en background</li>
+							<li>Le format SVG</li>
+							<li>Les data-uri</li>
+							<li>Les images sprite</li>
+						</ul>
+					<li class="title">Bootstrap</li>
+						<ul>
+							<li>Principe, téléchargement, installation</li>
+							<li>Principe de la grille : classes xs, sm, md, lg</li>
+							<li>Manipulation de la grille : push, pull, offset etc.</li>
+							<li>Styliser les éléments : textes, tableau, boutons, icônes</li>
+							<li>Menus, Carrousel et Fenêtre modales</li>
+						</ul>
+					
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>2 à 3 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>Connaître un peu de HTML et de CSS</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation Responsive Web Design avec Bootstrap"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>

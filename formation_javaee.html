@@ -1,0 +1,132 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation Java EE</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				<p>Découvrez la formation Java EE, la conception d'application web avec les WebServices Rest et SOAP, les webSockets, les systèmes distribuées, l'échange de message avec JMS, les beans etc.
+						</p>
+			
+				<ol>
+					<li class="title">Introduction</li>
+						<ul>
+							<li>Contexte, versions</li>
+							<li>Environnement de travail, installation des IDE</li>
+							<li>Serveur de déploiement Java EE : WildFly</li>
+							<li>Architecture : 3-tiers et n-tiers</li>
+							<li>Débogage</li>
+						</ul>
+					<li class="title">JPA et Hibernate</li>
+						<ul>
+							<li>Présentation de JPA et d'Hibernate</li>
+							<li>CRUD avec JPA</li>
+							<li>Modélisation et annotations</li>
+							<li>Le JQL et le HQL</li>
+						</ul>
+					<li class="title">Les EJB et JMS</li>
+						<ul>
+							<li>Mettre en place une architecture n-tiers</li>
+							<li>JMS : Java Message Service</li>
+							<li>Les différents serveur de message : ActiveMQ, HornetQ etc.</li>
+							<li>Développement événementiel avec les Message Driven Bean</li>
+						</ul>
+					<li class="title">Web Service Rest </li>
+						<ul>
+							<li>Rappel sur le principe des WebService</li>
+							<li>Exemple de service Rest et SOAP</li>
+							<li>Marshalling</li>
+							<li>Injection de dépendance</li>
+							<li>Créer des services en CRUD : GET, POST, PUT, DELETE</li>
+							<li>Changer le retour (content-type) dynamiquement</li>
+						</ul>
+					<li class="title">Les WebSockets</li>
+						<ul>
+							<li>Principe des WebSockets</li>
+							<li>Mise en oeuvre de webSockets avec un Client JS</li>
+						</ul>
+					<li class="title" >Serveur JBoss Wildfly</li>
+						<ul>
+							<li>Introduction à JBoss Wildfly</li>
+							<li>Déploiement</li>
+							<li>Sécuriser une API</li>
+						</ul>
+				<ol>
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>4 à 5 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>Connaissance en Java de base</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation JavaEE"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>
