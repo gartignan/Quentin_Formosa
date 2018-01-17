@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation SOA</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				
+				<p>SOA, l'architecture orientée service est une approche visant à découper le système d'information en service réutilisable et maintenable. Le but est de gagner en souplesse, maintenabilité, capacité à évoluer etc.</p>
+			
+				<ol>
+				<li class="title">Introduction à l'approche SOA</li>
+					<ul>
+							<li>Présentation de la SOA</li>
+							<li>Problématiques d'un Système d'information</li>
+							<li>Apport de la SOA</li>
+							<li>Différents Acteurs de l'approche SOA : ESB, MOM, ETL, BAM, BRMS, BPM, CEP etc.</li>
+							<li>Exemples d'architecture SOA</li>
+							<li>Principe de MapReduce</li>
+					</ul>
+				<li class="title">Principaux Design Pattern Architecturaux</li>
+					<ul>
+							<li>Conception du Système d'information</li>
+							<li>Containerization, Micro Service, Redondance, Service Data Replication</li>
+							<li>Gardien, Legacy Wrapper, Proxy, CallBack etc.</li>
+							
+					</ul>
+				<li class="title">Outils Existants</li>
+					<ul>
+							<li>Présentation des principaux ETL, ESB, MOM, BPM, BRMS etc.</li>
+					</ul>
+				<li class="title">MOM : Middleware oriented Messaging</li>
+				<li class="title">ETL : Extract Transform Load</li>
+				<li class="title">ESB : Enterprise Service Bus</li>
+				<li class="title">Conception de Services et Déploiement</li>
+	
+				
+				
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>5 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>aucun</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation SOA"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>

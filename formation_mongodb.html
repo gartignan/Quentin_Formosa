@@ -1,0 +1,151 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation MongoDB</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				<p>Développez, administrez et exploitez une base mongodb. Intégrez mongoDB dans vos développements Java, PHP, Spring, administrez la base de données, créez des jobs MapReduce et Aggregation Framework pour l'agrégation des données. </p>
+			
+				<ol>
+					<li class="title">Introduction</li>				
+						<ul>
+							<li>Etudes des bases SQL et NoSQL</li>
+							<li>Problématiques des bases SQL</li>
+							<li>Solution qu'apporte le No-SQL</li>
+							<li>Positionnement Efficacité / Expressivité</li>
+							<li>Présentation de MongoDB</li>
+							<li>Présentation de l'architecture distribué</li>
+						</ul>
+					<li class="title">Démarrage avec MongoDB</li>
+						<ul>
+							<li>Installation de MongoDB</li>
+							<li>Présentation des clients MongoDB</li>
+							<li>Première requêtes mongodb</li>
+							<li>Etude des fichiers et des répertoire</li>
+						</ul>
+					<li class="title">Requetes sous MongoDB</li>
+						<ul>
+							<li>Structure de données</li>
+							<li>Présentation du JSON</li>
+							<li>Présentation du BSON</li>
+							<li>Requetes CRUD (Create, Read, Update, Delete)</li>
+							<li>Etude des opérations sur les tableaux</li>
+							<li>Profiling sous mongodb</li>
+							<li>Principe de verrou sous mongodb</li>
+							<li>Indexation et performance</li>
+						</ul>
+						
+					<li class="title">Utilisation de MongoDB en développement</li>
+						<ul>
+							<li>Utilisation sous PHP</li>
+							<li>Utilisation en Java (Driver de Bases)</li>
+							<li>Utilisation sous Spring 4 - Spring Data</li>
+						</ul>
+						
+					<li class="title">Aggregation de données</li>
+						<ul>
+							<li>Utilisation d'aggregation Framework</li>
+							<li>Etude du pipeline d'aggregation</li>
+							<li>Etude des différentes opérateurs d'aggrégation et fonctions</li>
+							<li>Utilisation de MapReduce </li>
+							<li>Développement de script MapReduce</li>
+							<li>Aggregation Framework vs MapReduce : Etude des performances</li>							
+						</ul>
+						
+					<li class="title">Administration et Exploitation</li>
+						<ul>
+							<li>Installer mongodb sur un serveur Unix</li>
+							<li>Remote access d'une base mongodb</li>
+							<li>Création d'utilisateurs sous MongoDB</li>
+							<li>Gestion des droits</li>
+							<li>Création de Script</li>
+							<li>Profiling d'une base mongodb</li>
+							<li>Backup et Restoration d'une base</li>
+							<li>Import et export de données</li>
+						</ul>
+						
+					<li class="title">Sharding et replication</li>
+						<ul>
+							<li>Architecture de bases mongodb distribuées</li>
+							<li>Création de ReplicaSet</li>
+							<li>Sharding de données</li>
+						</ul>
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>3 à 4 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>Aucun</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation MongoDB"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>

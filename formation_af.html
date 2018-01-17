@@ -1,0 +1,121 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation Aggrégation Framework</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				
+				<p>Aggregation Framework est un outils puissant permettant l'aggrégation de données, les synthèses ... Aggrégation Framework utilise un pipeline d'agrégation simplifiant grandement la maintenabilité du code</p>
+			
+				<ol>
+				<li class="title">Introduction</li>
+					<ul>
+							<li>Présentation de MongoDB</li>
+							<li>Problématiques et besoin</li>
+							<li>Présentation des solutions d'agrégation de données</li>
+							<li>Positionnement d'Aggregation Framework (AF)</li>
+							<li>Principe d'Aggregation Framework</li>
+					</ul>
+				<li class="title">Premier Exemple d'utilisation</li>
+					<ul>
+							<li>Installation de MongoDB</li>
+							<li>Création d'un jeu de données</li>
+							<li>Premier exemple d'utilisation simple</li>
+							<li>Explications</li>
+					</ul>
+				<li class="title">Le pipeline d'agrégation</li>
+					<ul>
+							<li>Etude des différents opérateurs : group, match, select, unwind etc.</li>
+							<li>Etude des fonctions arithmetique</li>
+							<li>Etude des fonctions de comparaison</li>
+							<li>Etude des fonctions sur les chaines</li>
+							<li>Etude des fonctions sur les tableaux</li>
+							<li>etc.</li>
+					</ul>
+				<li class="title">Comparaison de performance</li>
+					<ul>
+							<li>Etude de performance en Aggrégation Framework, MapReduce</li>
+							<li>Synthèse</li>
+							
+					</ul>
+				
+				
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>1 à 2 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>connaissance de base de mongodb</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation Aggregation Framework"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>
