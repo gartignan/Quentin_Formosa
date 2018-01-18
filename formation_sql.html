@@ -1,0 +1,151 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		<div class="row">
+				
+			<h1> Formation SQL</h1>
+
+			<div class=" plan col-sm-8">
+				
+				
+				<p>L'incontournable langage depuis plusieurs année, il permet de gérer les données en base, il permets de créer, modifier, récupérer et supprimer les données. Cette formation propose les concepts basiques et avancés.</p>
+			
+				<p><b>Cette formation pourra se faire dans le SGBD SQL de votre choix</b></p>
+				<ol>
+				<li class="title">Introduction</li>
+					<ul>
+							<li>Présentation des bases de données SQL</li>
+							<li>Qu'est ce qu'une base de données</li>
+							<li>Présentation du SQL</li>
+							<li>Principaux Clients de base de données : DBeaver, Toad, PgAdmin etc.</li>
+					</ul>
+				<li class="title">Requêtage</li>
+					<ul>
+							<li>Importation de données à partir de Fichier XLS, CSV</li>					
+							<li>Projection avec la clause SELECT</li>
+							<li>Clause FROM</li>
+							<li>Sélection avec la clause WHERE</li>
+							<li>Jointure : LEFT JOIN, INNER JOIN, OUTER JOIN etc.</li>
+							<li>Autres types de jointure</li>
+							<li>Sous requêtes (Clause WHERE et clause FROM)</li>
+							<li>Opérateurs Ensembliste : UNION, INTERSECTION, MINUS</li>
+							<li>Regroupement des données : GROUP BY et HAVING</li>
+					</ul>
+				<li class="title">Définition des données</li>
+					<ul>
+							<li>Création, Modification et Supression des Tables</li>
+							<li>Création, Modification et Suppression des Vues</li>
+					</ul>
+				<li class="title">Transactions</li>
+					<ul>
+							<li>Définition des Transactions</li>
+							<li>Transactions ACID</li>
+							<li>Instruction de COMMIT</li>
+							<li>Instruction de ROLLBACK</li>
+							<li>Différents niveau d'isolation</li>
+					</ul>
+				<li class="title">Fonctions SQL</li>
+					<ul>
+							<li>Parcours des fonctions et utilisation</li>
+							<li>Définition de Fonctions</li>
+							<li>PL-SQL et procédures stockées</li>
+					</ul>
+				
+				<li class="title">Triggers</li>
+					<ul>
+							<li>Principes des Triggers</li>
+							<li>Création de triggers</li>
+							<li>Exemple de cas pratique des triggers (Gestion Incrementale)</li>
+
+					</ul>
+				<li class="title">MySQL, Posgre, Oracle ... : Quelle différences ?</li>
+					<ul>
+							<li>Historique des SGBD</li>
+							<li>Comparaison des SGBD en terme de fonctionnalités</li>
+							<li>Comparaison des SGBD en terme de performance</li>
+							<li>Comparaison des SGBD en terme de syntaxes</li>
+
+					</ul>
+				<li class="title">Développement : Connexion à une base de donnéés</li>
+					<ul>
+							<li>Drivers de connexion à une base de données : MySQL, Oracle, PosGre, IBM DB2 etc.</li>
+							<li>Connexion depuis un programme Java</li>
+							<li>Connexion depuis un programme PHP</li>
+							<li>Ouverture vers des technologie comme Hibernate</li>
+					</ul>
+				
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>3 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>aucun</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation SQL"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>

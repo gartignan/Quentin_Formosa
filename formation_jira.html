@@ -1,0 +1,159 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		<div class="row">
+				
+			<h1> Formation Jira</h1>
+
+			<div class=" plan col-sm-8">
+				
+				
+				<p>JIRA est un outil indispensable quand nous parlons de conduite de projet. Il vous permettra de mener à bien vos projet en méthode Agile. Bénéficiant de nombreuses extension il s'adaptera à vos besoins.</p>
+			
+				<ol>
+				<li class="title">Introduction</li>
+					<ul>
+							<li>Présentation et Historique</li>
+							<li>La communauté Atlassian, et les produits</li>
+							<li>Versions, licences et prix</li>
+							<li>Qu'est ce que JIRA</li>
+					</ul>
+				<li class="title">Démarrage Rapide</li>
+					<ul>
+							<li>Différente méthode d'installation de	 JIRA</li>
+							<li>Installation de JIRA sur un serveur</li>
+							<li>Configuration de la base de données et structure</li>
+							<li>Lancement de JIRA comme un service</li>
+							<li>Lancement de JIRA comme un service</li>
+							<li>Présentation globale de l'application</li>
+							<li>Présentation du modèle de données : Demande, Projet, Categories, Composants etc.</li>
+					</ul>
+				<li class="title">Création de Projets</li>
+					<ul>
+							<li>Catégprie</li>
+							<li>Composants</li>
+					</ul>
+				<li class="title">Demandes</li>
+					<ul>
+							<li>Créer, Supprimer, Modifier des demandes</li>
+							<li>Importation des demandes et mapping</li>
+							<li>Lier des demandes</li>
+							<li>Résoudre les demandes</li>
+							<li>Attribuer les demandes</li>
+							<li>Suivre les demandes</li>
+							<li>Commentaires</li>
+					</ul>
+				<li class="title">Filtre de Recherches</li>
+					<ul>
+							<li>Recherche simple et avancée</li>
+							<li>Introduction au JQL : Jira Query Language</li>
+							<li>Création de Filtres</li>
+							<li>Partage des filtres</li>
+					</ul>
+				
+				<li class="title">Configuration</li>
+					<ul>
+							<li>Gestion des Types de demandes</li>
+							<li>Gestion des composants</li>
+							<li>Gestion des types de liens entre demande</li>
+							<li>Gestion des champs</li>
+							<li>Gestion des Workflows</li>
+							<li>Gestion des Ecrans</li>
+							<li>Gestion des Autorisations</li>
+							<li>Gestion des Notification</li>
+							<li>Gestion de la solution JIRA : GC, Pièce Jointe, mails etc.</li>
+			
+					</ul>
+				<li class="title">JIRA Agile</li>
+					<ul>
+							<li>Gestion de la backlog et des story point</li>
+							<li>Gestion des sprint, configuration et démarrage</li>
+							<li>Suivre l'évolution : diagrammes agile</li>
+							<li>Tableau d'évolution des demandes</li>
+							<li>Gestion des Epopée</li>
+							<li>Gestion des Versions</li>
+							<li>Configuration de JIRA Agile</li>
+					</ul>
+				<li class="title">Rapport</li>
+					<ul>
+							<li>Génération de Dashboad</li>
+							<li>Création de Rapport</li>
+					</ul>
+				<li class="title">Extensions intéressantes : Service Desk, Card etc.</li>
+					
+				
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>2 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>aucun</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation Jira"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>

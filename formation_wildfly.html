@@ -1,0 +1,158 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
+    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					...
+					</button>
+					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="img/./logo3.png"></img></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li> <a href='index.html'>L'Entreprise</a></li>
+						<li> <a href='formation.html'>Formations</a></li>
+						<li> <a href='produits.html'>Produits</a></li>
+						<li> <a href='service.html'>Services</a></li>
+						<li> <a href='contact.html'>Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container">
+		
+		
+		<div class="row">
+				
+			<h1> Formation JBoss Wildfly</h1>
+			
+			<div class=" plan col-sm-8">
+				
+				
+				<p>JBoss, renommé Wildfly en version 8 est un serveur applicatif Java EE 7. Il permet de déployer des web services, des beans, des files de message, des websockets etc.</p>
+			
+				<ol>
+				<li class="title">Introduction</li>
+					<ul>
+							<li>Le besoin</li>
+							<li>Les différents serveur applicatif JEE 6 et JEE 7</li>
+							<li>Positionnement de Wildfly</li>
+							<li>Description de WildFly et des composants</li>
+					</ul>
+				<li class="title">Démarrage Rapide</li>
+					<ul>
+							<li>Téléchargement de WildFly</li>
+							<li>Installation</li>
+							<li>Démarrage</li>
+							<li>Description du Système de fichier</li>
+					</ul>
+				<li class="title">Déploiements</li>
+					<ul>
+							<li>Déploiements d'application JavaEE</li>
+							<li>Déploiements de WebSockets</li>
+							<li>Déploiements de Service REST</li>
+							<li>Déploiements de Service SOAP</li>
+							<li>Déploiements de Message driven beans</li>
+					</ul>
+				<li class="title">Configuration</li>
+					<ul>
+							<li>Découverte du fichier de configuration</li>
+							<li>Ajout d'un module (driver) de connexion à une base de données</li>
+							<li>Configuration du fichier standalone.xml</li>
+							<li>Changement d'IP, et de port</li>
+							<li>Variable de contexte</li>
+							<li>Propriétés système</li>
+							<li>Configuration d'une connexion à la base de données</li>
+							<li>Configuration d'un serveur de mail</li>
+							<li>Console cli, navigation et principale commande</li>
+							<li>Configuration du Serveur Web : undertow</li>
+							<li>Modification des noeuds</li>
+							<li>Déploiement à distance<li>
+							<li>Interface Web</li>
+					</ul>
+				<li class="title">Sécurité</li>
+					<ul>
+							<li>Configuration de la sécurité</li>
+							<li>Définition de l'authentification</li>
+							<li>Définition de l'autorisation</li>
+							<li>Connexion à une base de données</li>
+							<li>Connexion au fichier wildfly</li>
+							<li>Connexion à notre propre gestion d'utilisateurs et de groupes</li>
+							<li>Connexion à un LDAP</li>
+							<li>Conséquence sur le de developpement</li>
+							<li>Protection de la couche WebServices par roles</li>
+							<li>JAAS : Java Authentication and Autorization Service</li>
+							<li>SSL et certificats</li>
+							<li>Protection des mots de passe avec le Vault</li>
+					</ul>
+				<li class="title">Monitoring</li>
+					<ul>
+							<li>Monitorer un serveur avec JMX</li>
+							<li>Interface Web pour le monitoring</li>
+							<li>Déploiement d'application de monitoring</li>
+							<li>Solutions externes de monitoring</li>
+					</ul>
+				<li class="title">Mode domain</li>
+					<ul>
+							<li>Monter des instances standalone de wildfly en cluster</li>
+							<li>Passage en mode domaine</li>
+							<li>Etude de la configuration du mode domain</li>
+							<li>Création de JVM et configuration</li>
+							<li>Configurer des instances en Maitre-esclave</li>
+					</ul>
+				
+			</div>
+			<div class="desc col-sm-4">
+				<ul>
+					<li><span class="highlight duree">Durée de la formation : </span><span>3 jours</span></li>
+					<li><span class="highlight prerequis">Prérequis :</span> <span>aucun</span></li>
+					<li><span class="highlight lieu">Lieu de la formation :</span> <span>Lyon</span></li>
+				</ul>
+				<button class="devis btn btn-success" data-toggle="modal" data-target="#myModal">Demander un devis</button>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Demander un devis </h4>
+				</div>
+				<div class="modal-body">
+				<p>Demander un devis, nous vous répondons en moins de 24h</p>
+				  <input type="text" value="Formation Wildfly"></input>
+				  <input type="text" placeholder="Votre Mail"></input>
+				  <textarea placeholder="Commentaire"></textarea>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>
+
+
+
+		
+		
+	
+	</div>
+</body>
+</html>
