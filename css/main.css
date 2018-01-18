@@ -56,6 +56,12 @@
 	
 }
 
+.menu-training{
+	width : 350px;
+	display : inline-block;
+	margin-top: 5px;
+}
+
 .title{
 	margin-top : 10px;
 	color : rgb(126,11,7);
