@@ -229,12 +229,12 @@
 				<div class="modal-body">
 				<p>Nous contacter par téléphone au : 07.68.61.39.40</p>
 				<p>Nous contacter par mail à : <a href="mailto:contact@formosa.fr"> contact@formosa.fr</a></p>
-				  <input type="text" value="" placeholder="Objet de la demande"></input>
-				  <input type="text" placeholder="Votre Mail"></input>
-				  <textarea placeholder="Demande"></textarea>
+				  <input id="obj" type="text" value="" placeholder="Objet de la demande"></input>
+				  <input id="mail" type="text" placeholder="Votre Mail"></input>
+				  <textarea id="msg" placeholder="Demande"></textarea>
 				</div>
 				<div class="modal-footer">
-				  <button type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
+				  <button onClick="send()" type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
 				  <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
 				</div>
 			  </div>
@@ -250,6 +250,39 @@
 		<script>
 			$(".menu").hide();
 			
+			function send(){
+				var xml = "<mail><objet>"
+				+escapeXml($("#obj").val())+"</objet><expediteur>"
+				+escapeXml($("#mail").val())+"</expediteur><message>"
+				+escapeXml($("#msg").val())
+				+"</message></mail>";
+				//92.222.69.104
+				$.ajax({
+					type: 'POST',
+					url: 'http://92.222.69.104:8088/mail',
+					data: xml,
+					contentType : 'application/xml',
+						success: function(msg){
+							alert("Message bien envoyé nous répondons au plus vite sous 48h");
+						},
+						error : function(msg){
+							alert("Problème lors de l'envoi du mail, envoyez nous un mail directement s'il vous plait, ou vérifier votre mail");
+						} 
+				});
+				
+			}
+			
+			function escapeXml(unsafe) {
+				return unsafe.replace(/[<>&'"]/g, function (c) {
+				switch (c) {
+					case '<': return '&lt;';
+					case '>': return '&gt;';
+					case '&': return '&amp;';
+					case '\'': return '&apos;';
+					case '"': return '&quot;';
+				}
+			});
+}
 		</script>
 </body>
 </html>
