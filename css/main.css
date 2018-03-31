@@ -118,6 +118,10 @@ h1 {
 	margin-top:20px;
 }
 
+.category{
+	cursor: pointer;
+}
+
 .devis{
 	margin : 5px;
 	text-align : center;
