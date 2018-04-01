@@ -31,7 +31,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="menu">
 					<ul class="nav navbar-nav">
-						<li> <a href='index.html'>L'Entreprise</a></li>
+						
 						<li> <a onMouseOver="$('.menu').fadeIn()" id="formation" href='formation.html' >Formations</a></li>
 				
 						<li> <a href='produits.html'>Produits</a></li>
@@ -136,6 +136,10 @@
 					<a href="formation_talend_bd.html">Formation <b>Talend for Big Data</b> </a> 
 					</div>
 					
+					<div class="menu-training">
+					<a href="formation_fullstack.html">Formation <b>Développeur FullStack</b> </a> 
+					</div>
+					
 				</div>
 			</div>
 	</nav>    <div class="container">
@@ -143,17 +147,60 @@
 		
 		<div class="row">
 				
-			<h1> Nos formations</h1>
+			<h1> Nos formations par catégories</h1>
 					
 		</div>
 		
 		
 		
-		<div id="DWB" class="category row">
-			<div class="col-xs-12">
-			<h2>Développement Web Back</h2>
+		<div  class="category row">
+			<div class="col-sm-4">
+			<button id="DWB" class="btn-default active">Développement Web Back</button>
+			</div>
+		
+			<div class="col-sm-4">
+				<button id="DWF" class="btn-default">Développement Web Front</button>
+			</div>
+		
+			<div class="col-sm-4">
+				<button id="BD" class="btn-default">Big Data</button>
+			</div>
+		
+			<div class="col-sm-4">		
+				<button id="BI" class="btn-default">BI - Business Intelligence</button>
+			</div>
+		
+			<div class="col-sm-4">
+				<button id="SOA" class="btn-default">Architecture &amp; Performance</button>
+			</div>
+		
+			<div class="col-sm-4">
+				<button id="BDD" class="btn-default">Base de données SQL &amp; No-SQL</button>
+			</div>
+			<div class="col-sm-4">
+				<button id="SVR" class="btn-default">Administration et Exploitation de Serveurs</button>
+			</div>
+			<div class="col-sm-4">
+				<button id="MONTH" class="btn-default">Formation d'un mois</button>
 			</div>
 		</div>
+		
+		<div class="training-line row MONTH formations">
+				<div class="col-md-4 training">
+					<div>
+
+						<h3 class="title">Développeur Full Stack</h3>
+						<h4 class="subtitle">Apprenez un métier</h4>
+						<div class=description>Cette formation d'un mois est pleinement personnalisable elle permet d'apprendre le métier de développeur Full Stack en 20 jours de formation.					
+						</div>
+						<a href="formation_fullstack.html"><button class="btn btn-success">Plus d'infos</button></a>
+						
+					</div>
+				</div>
+
+				
+		</div>
+		
 		
 		<div class="training-line row DWB formations">
 				<div class="col-md-4 training">
@@ -241,11 +288,7 @@
 				
 	
 		</div>
-		<div id="DWF" class=" category row">
-		<div class="col-xs-12">
-			<h2>Développement Web Front</h2>
-		</div>
-		</div>
+		
 		<div class="training-line row DWF ">
 				<div class="col-md-4 training">
 					<div>
@@ -312,11 +355,7 @@
 
 
 		
-		<div id="BD" class="category row">
-		<div class="col-xs-12">
-			<h2>Big Data</h2>
-			</div>
-		</div>
+		
 		
 		<div class="row BD training-line">
 				<div class="col-md-4 training">
@@ -382,11 +421,7 @@
 				</div>
 		</div>
 		
-		<div id="BI" class="category row">
-		<div class="col-xs-12">		
-			<h2>BI - Business Intelligence</h2>
-		</div>
-		</div>
+		
 		
 		<div class="BI row training-line">
 				<div class="col-md-4 training">
@@ -403,13 +438,7 @@
 				</div>			
 		</div>
 		
-	
-		
-		<div id="SOA" class="category row">
-			<div class="col-xs-12">
-			<h2>Architecture &amp; Performance</h2>
-			</div>
-		</div>
+
 		<div class="modal fade" id="myModal2" role="dialog">
 			<div class="modal-dialog">
 			
@@ -456,11 +485,8 @@
 				
 				
 		</div>
-		<div id="BDD" class="category row">
-			<div class="col-xs-12">
-			<h2>Base de données SQL &amp; No-SQL</h2>
-			</div>
-		</div>
+		
+		
 		
 		<div class="BDD row training-line">
 				<div class="col-md-4 training">
@@ -501,13 +527,7 @@
 					</div>
 		</div>
 		
-		
-		<div id="SVR" class="category row">
-		<div class="col-xs-12">
-			
-			<h2>Administration et Exploitation de Serveurs</h2>
-		</div>
-		</div>
+
 		<div class="SVR row training-line">
 				<div class="col-md-4 training">
 					<div>
@@ -552,6 +572,8 @@
 			$(".training-line").hide();
 			$(".DWB").show();
 			$("#DWB").click(function(){
+				$("button").removeClass("active");
+				$("#DWB").addClass("active");
 				$(".DWB").fadeToggle();
 				$(".DWF").hide();
 				$(".DB").hide();
@@ -560,9 +582,12 @@
 				$(".SVR").hide();
 				$(".BD").hide();
 				$(".BDD").hide();
+				$(".MONTH").hide();
 			});
 			
 			$("#DWF").click(function(){
+				$("button").removeClass("active");
+				$("#DWF").addClass("active");
 				$(".DWF").fadeToggle();
 				$(".DWB").hide();
 				$(".DB").hide();
@@ -571,19 +596,25 @@
 				$(".SVR").hide();
 				$(".BD").hide();
 				$(".BDD").hide();
+				$(".MONTH").hide();
 			});
 			
 			$("#BD").click(function(){
+				$("button").removeClass("active");
+				$("#BD").addClass("active");
 				$(".BD").fadeToggle();
 				$(".DWF").hide();
 				$(".DWB").hide();
 				$(".SOA").hide();
 				$(".BI").hide();
 				$(".SVR").hide();
-				$(".BDD").hide();
+				$(".BDD").hide();				
+				$(".MONTH").hide();
 			});
 			
 			$("#SOA").click(function(){
+				$("button").removeClass("active");
+				$("#SOA").addClass("active");
 				$(".SOA").fadeToggle();
 				$(".DWF").hide();
 				$(".DWB").hide();
@@ -592,9 +623,12 @@
 				$(".SVR").hide();
 				$(".BD").hide();
 				$(".BDD").hide();
+				$(".MONTH").hide();
 			});
 			
 			$("#BDD").click(function(){
+				$("button").removeClass("active");
+				$("#BDD").addClass("active");
 				$(".BDD").fadeToggle();
 				$(".DWF").hide();
 				$(".DWB").hide();
@@ -603,9 +637,12 @@
 				$(".BI").hide();
 				$(".SVR").hide();
 				$(".BD").hide();
+				$(".MONTH").hide();
 			});
 			
 			$("#SVR").click(function(){
+				$("button").removeClass("active");
+				$("#SVR").addClass("active");
 				$(".SVR").fadeToggle();
 				$(".DWF").hide();
 				$(".DWB").hide();
@@ -613,13 +650,31 @@
 				$(".SOA").hide();
 				$(".BI").hide();
 				$(".BD").hide();
-				$(".BDD").hide();
+				$(".BDD").hide();				
+				$(".MONTH").hide();
 				
 			});
 			
 			$("#BI").click(function(){
+				$("button").removeClass("active");
+				$("#BI").addClass("active");
 				$(".BI").fadeToggle();
 				$(".DWF").hide();
+				$(".DWB").hide();
+				$(".DB").hide();
+				$(".SOA").hide();
+				$(".SVR").hide();
+				$(".BD").hide();
+				$(".BDD").hide();
+				$(".MONTH").hide();
+			});
+			
+			$("#MONTH").click(function(){
+				$("button").removeClass("active");
+				$("#MONTH").addClass("active");
+				$(".MONTH").fadeToggle();
+				$(".DWF").hide();
+				$(".BI").hide();
 				$(".DWB").hide();
 				$(".DB").hide();
 				$(".SOA").hide();
