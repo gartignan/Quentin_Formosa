@@ -125,6 +125,19 @@ h1 {
 	
 }
 
+#download {
+	width : 100px;
+	text-align : center;
+}
+
+.mention-menu{
+	text-align : center;
+}
+
+.mention{
+	margin-top : 10px;
+}	
+
 .desc ul{
 	list-style : none;
 	margin-left : -20px;

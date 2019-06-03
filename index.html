@@ -1,290 +1,334 @@
+<!doctype html>
 <html lang="fr">
+
 <head>
-	<meta charset='utf-8'>
-	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./css/main.css"/>
-	<title>Formosa - L'informatique au Sommet - Formation, Conseil, Services</title>
-    <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
-    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113147613-1"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-113147613-1');
-	</script>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/main2.css" />
+  <link rel="stylesheet" href="css.css">
+  <title>Formosa</title>
+  <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+  <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-    
+<style>
+  @font-face {
+    font-family: "brandon bold";
+    src: url(font/brandon-grotesque-bold.otf);
+  }
+
+  @font-face {
+    font-family: "brandon medium";
+    src: url(font/brandon-grotesque-medium.otf);
+  }
+
+  @font-face {
+    font-family: "brandon thin";
+    src: url(font/brandon-grotesque-thin.otf);
+  }
+
+  div {
+    font-family: "brandon thin";
+  }
+
+  strong {
+    font-family: "brandon bold";
+  }
+
+  button {
+    font-family: "brandon medium";
+  }
+
+  b {
+    font-family: "brandon thin";
+  }
+
+  a {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 16px;
+    font-family: "brandon bold";
+    color: #000000;
+
+  }
+
+  #bca {
+    background-image: url("img4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+
+  }
+
+  #overlay {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.35;
+    margin-top: 0px;
+    z-index: 2;
+  }
+
+  #row1 {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: 9;
+    color: white;
+  }
+
+  #row1 .row {
+    text-align: center;
+  }
+
+  #box1 {
+    font-size: 32px;
+    margin-top: 80px;
+  }
+
+  #box2 {
+    margin-top: 45px;
+    font-size: 66px;
+  }
+
+  #box3 {
+    font-size: 60px;
+    margin-top: 75px;
+  }
+
+  #box5 {
+    font-size: 60px;
+    margin-top: 75px;
+  }
+
+  #ind {
+    font-size: 60px;
+    margin-top: 75px;
+  }
+
+  #button1 {
+    margin-top: 83px;
+    font-size: 32px;
+    background: transparent;
+  }
+
+  #formosa {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #pht1 {
+    margin-top: 75px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .corner-button {
+    font-family: "brandon bold";
+  }
+
+  .corner-button2 {
+    font-family: "brandon bold";
+  }
+</style>
+
 <body>
+  <div class="container-fluid">
 
-	<nav  onMouseOut="event.stopPropagation(); $('.menu').fadeOut()" class="navbar navbar-default">
-			<div  onMouseOut="event.stopPropagation();" class="container">
-				<div class="nav-header">
-					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
-					...
-					</button>
-					<a href="#" class="navbar-brand"><img id="logo" class="img-responsive" src="./logo3.png" alt="les montagnes" ></img></a>
-				</div>
-				<div class="collapse navbar-collapse" id="menu">
-					<ul class="nav navbar-nav">
-						
-						<li> <a onMouseOver="$('.menu').fadeIn()" id="formation" href='formation.html' >Formations</a></li>
-				
-						<li> <a href='produits.html'>Produits</a></li>
-						<li> <a href='service.html'>Services</a></li>
-						<li> <a href='' data-toggle="modal" data-target="#myModal2">Nous contacter</a></li>
-					</ul>
-				</div>
-				
-			</div>
-			<div onMouseOut="event.stopPropagation();" class="menu container">
-				<div class="row">
-					
-					<div class="menu-training">
-					<a href="formation_af.html">Formation <b>Aggregation Framework</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_angular.html">Formation <b>Angular 4 / AngularJS 4</b></a>  
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_cassandra.html">Formation <b>Apache Cassandra</b></a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_apache.html">Formation <b>Apache Web Server</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_android.html">Formation <b>Développement Androïd</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_hibernate.html">Formation <b>Hibernate</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_html.html">Formation <b>HTML5 CSS3</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_java.html">Formation <b>Java</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_javaee.html">Formation <b>Java EE</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_js.html">Formation <b>Javascript</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_wildfly.html">Formation <b>JBoss / WildFly</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_jira.html">Formation <b>JIRA</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_jquery.html">Formation <b>JQuery</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_mapreduce.html">Formation <b>MapReduce</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_mongodb.html">Formation <b>MongoDB</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_performance.html">Formation <b>Performance des applications</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_php.html">Formation <b>PHP</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_responsive.html">Formation <b>Responsive &amp; Bootstrap</b> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_soa.html">Formation <b>SOA</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_spring.html">Formation <b>Spring 4 &amp; Spring Boot</b></a>  
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_sql.html">Formation <b>SQL</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_talend_diesb.html">Formation <b>Talend Data Integration &amp; ESB</b></a>  
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_talend_bd.html">Formation <b>Talend for Big Data</b> </a> 
-					</div>
-					
-					<div class="menu-training">
-					<a href="formation_fullstack.html">Formation <b>Développeur FullStack</b> </a> 
-					</div>
-				</div>
-			</div>
-	</nav>
+    <div class="row">
+      <div id="formosa" class="col-sm-2">
+        <img src="logo3.png">
+      </div>
+      <div class="col-md-7 col-md-offset-2 col-lg-5 col-lg-offset-4 col-sm-10 ">
+        <ul>
+          <a href="#ind">Formation</a>
+          <a href="#box3">Produits</a>
+          <a href="#box5">Service</a>
+          <a href="#contacte-bca">Contact</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="bca" class="container-fluid">
+    <div class="row" id="overlay"></div>
+    <div class="row" id="row1">
+      <div class="col-xs-12">
+        <div class="row">
+          <div id="box1" class="col-xs-12">
+            Formations, Produits et Services
+          </div>
+        </div>
+        <div id="box2" class="row">
+          <div class="col-xs-12">
+            <strong>EN ROUTE POUR LE SOMMET</strong>
+          </div>
+        </div>
+        <div class="row">
+          <div id="button1" class="col-xs-12">
+            <a href="#ind">
+              <button class="corner-button">
+                En savoir plus
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div class="container-fluid">
+    <div class="row">
+      <div id="ind" class="col-sm-6">
+        <div class="col-md-7 col-md-offset-5">
+          <b>Nos </b><strong>Formations</strong>
+          <p>Coté formation l'entreprise propose le catalogue suivant.
+            Cependant en fonction de vos désirs,
+            nous ainsi que nos partenaires pouvons vous proposer la
+            formation sur-mesure correspondant à votre projet pédagogique.</p>
+          <a href="http://formosa.fr/">
+            <button class="corner-button2">
+              Catalogue
+            </button>
+          </a>
+        </div>
+      </div>
+      <div id="pht1" class="col-sm-6">
+        <div class="col-md-7 col-md-offset-1">
+          <img class="img-responsive" src="img1.jpg">
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  </div>
+  <div id="produit-bca" class="container-fluid">
+    <div class="row">
+      <div id="pht1" class="col-sm-6">
+        <div class="col-md-7 col-md-offset-5">
+          <img class="img-responsive" src="img2.jpg">
+        </div>
+      </div>
+      <div id="box3" class="col-sm-6">
+        <div class="col-md-6 col-md-offset-1">
+          <b>Nos </b><strong>Produits</strong>
+          <p>Formosa c’est aussi un produit, un logiciel pour
+            l’apprentissage du Chinois nommé SmartChinese.
+            SmartChinese est au coeur de la recherche et de
+            l’innovation avec des moyens pédagofique inédit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="service-bca" class="container-fluid">
+    <div class="row">
+      <div id="box5" class="col-sm-6">
+        <div class="col-md-7 col-md-offset-5">
+          <b>Nos </b><strong>Services</strong>
+          <p>Formosa c’est aussi du service en : réalisation de site web,
+            traduction de site web en Chinois, suivi de projet.
+            Nous collaborons aussi avec les écoles de productions
+            et des écoles privées en informatiques.</p>
+        </div>
+      </div>
+      <div id="pht1" class="col-sm-6">
+        <div class="col-md-7 col-md-offset-1">
+          <img class="img-responsive" src="img3.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
 
-		
-		
-		
-    <div class="container">
-		
-		<div class="main-picture row">
-				<div class="col-md-12">
-				<img width="100%" class="img-responsive" src="./img4.jpg" alt="La montagne">
-				</div>		
-		</div>
-		<div class="row">
-				<div class="col-md-6">
-				
-				<h2> Nos formations</h2>
-				
-				Coté formation l'entreprise propose le catalogue suivant. Cependant en fonction de vos désirs, nous ainsi que nos partenaires pouvons vous proposer la formation sur-mesure correspondant à votre projet pédagogique.
-				
-				<table class="table table-responsive">
-				<tr><td>Formation <b>Apache Cassandra</b></td><td>2 à 3 jours</td></tr>
-				<tr><td>Formation <b>Talend Data Integration</b></td><td>4 à 5 jours</td></tr>
-				<tr><td>Formation <b>Java et Java EE</b></td><td>4 à 5 jours</td></tr>
-				<tr><td>Formation <b>Developpement Android</b></td><td>4 à 5 jours</td></tr>
-				<tr><td>Formation <b>Apache Web Server</b></td><td>3 jours</td></tr>
-				<tr><td>Formation <b>JBoss/WildFly</b></td><td>2 à 3 jours</td></tr>
-				<tr><td><a href="./formation.html">Découvrez le catalogue complet</a><td></td></tr>
-				
-				</table>
-				</div>
-				
-				<div class="col-md-6">
-				<img class="img-responsive" src="./img1.jpg" alt="formation : image de formation">
-				</div>		
-		</div>
-		
-		<div class="row">
-			L'entreprise Formosa possède une activité se découpant en trois grands piliers. La formation, les produits et le service.	
-		</div>
-		
-		<div class="row">
-				<div class="col-md-6">
-				<img class="img-responsive" src="./img2.jpg" alt="produit : image d'une fille etudiant sur l'ordinateur">
-				</div>
-				<div class="col-md-6">
-				
-				<h2> Les produits</h2>
-				
-				Dans le cadre du développement des projets innovants, notre entreprise est actuellement en train de créer un produit visant à enseigner le Chinois, le produit se nomme <a href="http://www.smartchinese.net">SmartChinese</a>. Ce projet vise à apprendre le chinois à l'aide de l'intelligence artificielle de l'ordinateur, il vise aussi à tenir au courant l'utilisateur de ces progrès en temps réel. <a href="http://www.smartchinese.net">SmartChinese</a> verra bientôt le jour, alors, tenez-vous prêt.
-				
-				
-				
-				</div>
-				
-						
-		</div>
-		
-		<div class="row">
-				<div class="col-md-6">
-				
-				<h2> Les Services</h2>
-				
-				Formosa, c'est aussi le service, développement, administration projets innovants, nos developpeurs sauront s'intégrer dans vos équipes pour la réussite de vos projets.
-				<ul>
-				
-				<li>Développement Web Front: HTML5, CSS3, Angular 4, Javascript</li>
-				<li>Développement Back : Java EE, Spring, Guice, Architecture Distribuée</li>
-				<li>Visualisation : Chart, Dashboard, D3js</li>
-				<li>Big Data : MongoDB, Cassandra, MapReduce</li>
-				<li>Business Intelligence : Talend Data Integration &amp; Talend ESB</li>
-				
-				</ul>
-				</div>
-				
-				<div class="col-md-6">
-				<img class="img-responsive" src="./img3.jpg" alt="conseil : image de diagrammes et d'analyse" >
-				</div>		
-		</div>
-		<br><br>
-		
-		<div class="modal fade" id="myModal2" role="dialog">
-			<div class="modal-dialog">
-			
-			  <!-- Modal content-->
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <button type="button" class="close" data-dismiss="modal">&times;</button>
-				  <h4 class="modal-title">Nous contacter </h4>
-				</div>
-				<div class="modal-body">
-				<p>Nous contacter par téléphone au : 06.62.15.86.09</p>
-				<p>Nous contacter par mail à : <a href="mailto:contact@formosa.fr"> contact@formosa.fr</a></p>
-				  <input id="obj" type="text" value="" placeholder="Objet de la demande"></input>
-				  <input id="mail" type="text" placeholder="Votre Mail"></input>
-				  <textarea id="msg" placeholder="Demande"></textarea>
-				</div>
-				<div class="modal-footer">
-				  <button onClick="send()" type="button" class="btn btn-success" data-dismiss="modal">Demander</button>
-				  <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
-				</div>
-			  </div>
-			  
-			</div>
-		</div>
-		
+  <!-------------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="partenaire-bca" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-2">
 
-	
-	
-	</div>
-	
-		<script>
-			$(".menu").hide();
-			
-			function send(){
-				var xml = "<mail><objet>"
-				+escapeXml($("#obj").val())+"</objet><expediteur>"
-				+escapeXml($("#mail").val())+"</expediteur><message>"
-				+escapeXml($("#msg").val())
-				+"</message></mail>";
-				//92.222.69.104
-				$.ajax({
-					type: 'POST',
-					url: 'http://92.222.69.104:8088/mail',
-					data: xml,
-					contentType : 'application/xml',
-						success: function(msg){
-							alert("Message bien envoyé nous répondons au plus vite sous 48h");
-						},
-						error : function(msg){
-							alert("Problème lors de l'envoi du mail, envoyez nous un mail directement s'il vous plait, ou vérifier votre mail");
-						} 
-				});
-				
-			}
-			
-			function escapeXml(unsafe) {
-				return unsafe.replace(/[<>&'"]/g, function (c) {
-				switch (c) {
-					case '<': return '&lt;';
-					case '>': return '&gt;';
-					case '&': return '&amp;';
-					case '\'': return '&apos;';
-					case '"': return '&quot;';
-				}
-			});
-}
-		</script>
+        <a href="https://envato.com/">
+          <div class="col-md-2 col-md-offset-1">
+            <img src="Envato.png" alt="Envato">
+          </div>
+        </a>
+        <a href="https://fr.wordpress.org/">
+          <div class="col-md-2 col-md-offset-0">
+            <img src="WordPress.png" alt="WordPress">
+          </div>
+        </a>
+        <a href="https://tutsplus.com/">
+          <div class="col-md-2 col-md-offset-0">
+            <img src="Tuts+.png" alt="Tuts">
+          </div>
+        </a>
+        <a href="http://press.envato.com/46991-microlancer-new-envato-freelance-service-marketplace">
+          <div class="col-md-2 col-md-offset-0">
+            <img src="Microlancer_copy.png" alt="Microlancer">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="contacte-bca" class="container-fluid">
+    <div class="row">
+      <div id="prt1" class="col-md-4 col-md-offset-2">
+        <strong>Contactez </strong><b>nous</b>
+        <p>Envie de discuter autour d’un projet, d’une formation, d’une idée, 
+            nous sommes à votre écoute</p>
+        <div id="site" class="row">
+          <div id="kl1" class="col-xs-12 col-lg-6">
+             <img src="icon/Mobile-Icon.png" /> +33 6 62 15 86 09
+          </div>
+          <div id="kl1" class="col-xs-12 col-lg-6">
+              <img src="icon/Mail-Icon.png" /> contact@formosa.fr
+          </div>
+        </div>
+        <div class="row">
+          <div id="kl1" class="col-xs-12 col-lg-6">
+              <img src="icon/Twitter-Icon.png" /> @formosa
+          </div>
+          <div id="kl1" class="col-xs-12 col-lg-6">
+              <img src="icon/Facebook-Icon.png" /> facebook.com/formosa
+          </div>
+        </div>
+        <div class="row">
+          <div id="kl1" class="col-xs-12 col-lg-6">
+              <img src="icon/Google+-Icon.png" /> plus.com/formosa
+          </div>
+          
+        </div>
+      </div>
+      <form action="/action_page.php">
+      <div id="input" class="col-md-4 col-md-4">
+        <input id="input1" type="text" max="25" placeholder="Votre Nom *">
+        <input id="input2" type="email" max="25" placeholder="Votre E-mail *">
+        <textarea name="comment" placeholder="Votre Message *" rows="10" cols="72"></textarea>
+        <input class="col-md-8 col-md-offset-2" id="corner-button" type="submit" value="Envoyer">
+      </div>
+    </form>
+    </div>
+    <div id="ligne" class="col-md-8 col-md-offset-2"></div>
+  </div>
+
+  <script>
+  
+
+
+    function scrollTo( target ) {
+        if( target.length ) {
+            $("html, body").stop().animate( { scrollTop: target.offset().top }, 1500);
+        }
+    }
+   // scrollTo( $("#contacte-bca") );
+
+  </script>
+
 </body>
+
 </html>
