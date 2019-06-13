@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -7,136 +7,13 @@
   <link rel="stylesheet" href="./css/main2.css" />
   <link rel="stylesheet" href="css.css">
   <title>Formosa</title>
+  <meta name="description" content="Formations, Produits et Services" />
   <script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
   <script type="application/javascript" src="./js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style>
-  @font-face {
-    font-family: "brandon bold";
-    src: url(font/brandon-grotesque-bold.otf);
-  }
 
-  @font-face {
-    font-family: "brandon medium";
-    src: url(font/brandon-grotesque-medium.otf);
-  }
-
-  @font-face {
-    font-family: "brandon thin";
-    src: url(font/brandon-grotesque-thin.otf);
-  }
-
-  div {
-    font-family: "brandon thin";
-  }
-
-  strong {
-    font-family: "brandon bold";
-  }
-
-  button {
-    font-family: "brandon medium";
-  }
-
-  b {
-    font-family: "brandon thin";
-  }
-
-  a {
-    list-style-type: none;
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 30px;
-    font-size: 16px;
-    font-family: "brandon bold";
-    color: #000000;
-
-  }
-
-  #bca {
-    background-image: url("img4.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-
-
-  }
-
-  #overlay {
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    background-color: #000000;
-    opacity: 0.35;
-    margin-top: 0px;
-    z-index: 2;
-  }
-
-  #row1 {
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    z-index: 9;
-    color: white;
-  }
-
-  #row1 .row {
-    text-align: center;
-  }
-
-  #box1 {
-    font-size: 32px;
-    margin-top: 80px;
-  }
-
-  #box2 {
-    margin-top: 45px;
-    font-size: 66px;
-  }
-
-  #box3 {
-    font-size: 60px;
-    margin-top: 75px;
-  }
-
-  #box5 {
-    font-size: 60px;
-    margin-top: 75px;
-  }
-
-  #ind {
-    font-size: 60px;
-    margin-top: 75px;
-  }
-
-  #button1 {
-    margin-top: 83px;
-    font-size: 32px;
-    background: transparent;
-  }
-
-  #formosa {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  #pht1 {
-    margin-top: 75px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  .corner-button {
-    font-family: "brandon bold";
-  }
-
-  .corner-button2 {
-    font-family: "brandon bold";
-  }
 </style>
 
 <body>
@@ -144,14 +21,14 @@
 
     <div class="row">
       <div id="formosa" class="col-sm-2">
-        <img src="logo3.png">
+        <img src="logo3.png" alt="logo">
       </div>
       <div class="col-md-7 col-md-offset-2 col-lg-5 col-lg-offset-4 col-sm-10 ">
         <ul>
-          <a href="#ind">Formation</a>
-          <a href="#box3">Produits</a>
-          <a href="#box5">Service</a>
-          <a href="#contacte-bca">Contact</a>
+          <li><a href="#ind">Formation</a></li>
+          <li><a href="#box3">Produits</a></li>
+          <li><a href="#box5">Service</a></li>
+          <li><a href="#contacte-bca">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -168,7 +45,9 @@
         </div>
         <div id="box2" class="row">
           <div class="col-xs-12">
-            <strong>EN ROUTE POUR LE SOMMET</strong>
+
+            <div id="api">EN ROUTE POUR LE SOMMET</div>
+
           </div>
         </div>
         <div class="row">
@@ -188,7 +67,9 @@
     <div class="row">
       <div id="ind" class="col-sm-6">
         <div class="col-md-7 col-md-offset-5">
-          <b>Nos </b><strong>Formations</strong>
+          <div id="nsfrm">
+            <b>Nos </b><strong>Formations</strong>
+          </div>
           <p>Coté formation l'entreprise propose le catalogue suivant.
             Cependant en fonction de vos désirs,
             nous ainsi que nos partenaires pouvons vous proposer la
@@ -202,7 +83,7 @@
       </div>
       <div id="pht1" class="col-sm-6">
         <div class="col-md-7 col-md-offset-1">
-          <img class="img-responsive" src="img1.jpg">
+          <img class="img-responsive" src="img1.jpg" alt="photo1">
         </div>
       </div>
     </div>
@@ -210,14 +91,16 @@
   </div>
   <div id="produit-bca" class="container-fluid">
     <div class="row">
-      <div id="pht1" class="col-sm-6">
+      <div id="pht2" class="col-sm-6">
         <div class="col-md-7 col-md-offset-5">
-          <img class="img-responsive" src="img2.jpg">
+          <img class="img-responsive" src="img2.jpg" alt="photo2">
         </div>
       </div>
       <div id="box3" class="col-sm-6">
         <div class="col-md-6 col-md-offset-1">
-          <b>Nos </b><strong>Produits</strong>
+          <div id="nsprd">
+            <b>Nos </b><strong>Produits</strong>
+          </div>
           <p>Formosa c’est aussi un produit, un logiciel pour
             l’apprentissage du Chinois nommé SmartChinese.
             SmartChinese est au coeur de la recherche et de
@@ -231,43 +114,43 @@
     <div class="row">
       <div id="box5" class="col-sm-6">
         <div class="col-md-7 col-md-offset-5">
-          <b>Nos </b><strong>Services</strong>
+          <div id="nssrv">
+            <b>Nos </b><strong>Services</strong>
+          </div>
           <p>Formosa c’est aussi du service en : réalisation de site web,
             traduction de site web en Chinois, suivi de projet.
             Nous collaborons aussi avec les écoles de productions
             et des écoles privées en informatiques.</p>
         </div>
       </div>
-      <div id="pht1" class="col-sm-6">
+      <div id="pht3" class="col-sm-6">
         <div class="col-md-7 col-md-offset-1">
-          <img class="img-responsive" src="img3.jpg">
+          <img id="image3" class="img-responsive" src="img3.jpg" alt="photo3">
         </div>
       </div>
     </div>
   </div>
-
   <!-------------------------------------------------------------------------------------------------------------------------------------------------->
   <div id="partenaire-bca" class="container-fluid">
     <div class="row">
-      <div class="col-sm-10 col-sm-offset-2">
-
+      <div class="col-sm-10 col-sm-offset-2 ">
         <a href="https://envato.com/">
           <div class="col-md-2 col-md-offset-1">
             <img src="Envato.png" alt="Envato">
           </div>
         </a>
         <a href="https://fr.wordpress.org/">
-          <div class="col-md-2 col-md-offset-0">
+          <div class="col-md-2 ">
             <img src="WordPress.png" alt="WordPress">
           </div>
         </a>
         <a href="https://tutsplus.com/">
-          <div class="col-md-2 col-md-offset-0">
+          <div class="col-md-2 ">
             <img src="Tuts+.png" alt="Tuts">
           </div>
         </a>
         <a href="http://press.envato.com/46991-microlancer-new-envato-freelance-service-marketplace">
-          <div class="col-md-2 col-md-offset-0">
+          <div class="col-md-2 ">
             <img src="Microlancer_copy.png" alt="Microlancer">
           </div>
         </a>
@@ -279,54 +162,73 @@
     <div class="row">
       <div id="prt1" class="col-md-4 col-md-offset-2">
         <strong>Contactez </strong><b>nous</b>
-        <p>Envie de discuter autour d’un projet, d’une formation, d’une idée, 
-            nous sommes à votre écoute</p>
+        <p>Envie de discuter autour d’un projet, d’une formation, d’une idée,
+          nous sommes à votre écoute</p>
         <div id="site" class="row">
           <div id="kl1" class="col-xs-12 col-lg-6">
-             <img src="icon/Mobile-Icon.png" /> +33 6 62 15 86 09
+            <img src="icon/Mobile-Icon.png" alt="Mobile" /> +33 6 62 15 86 09
           </div>
-          <div id="kl1" class="col-xs-12 col-lg-6">
-              <img src="icon/Mail-Icon.png" /> contact@formosa.fr
-          </div>
-        </div>
-        <div class="row">
-          <div id="kl1" class="col-xs-12 col-lg-6">
-              <img src="icon/Twitter-Icon.png" /> @formosa
-          </div>
-          <div id="kl1" class="col-xs-12 col-lg-6">
-              <img src="icon/Facebook-Icon.png" /> facebook.com/formosa
+          <div id="kl2" class="col-xs-12 col-lg-6">
+            <img src="icon/Mail-Icon.png" alt="Mail" /> contact@formosa.fr
           </div>
         </div>
         <div class="row">
-          <div id="kl1" class="col-xs-12 col-lg-6">
-              <img src="icon/Google+-Icon.png" /> plus.com/formosa
+          <div id="kl3" class="col-xs-12 col-lg-6">
+            <img src="icon/Twitter-Icon.png" alt="twitter" /> @formosa
           </div>
-          
+          <div id="kl4" class="col-xs-12 col-lg-6">
+            <img src="icon/Facebook-Icon.png" alt="Facebook" /> facebook.com/formosa
+          </div>
+        </div>
+        <div class="row">
+          <div id="kl5" class="col-xs-12 col-lg-6">
+            <img src="icon/Google+-Icon.png" alt="Google" /> plus.com/formosa
+          </div>
+
         </div>
       </div>
       <form action="/action_page.php">
-      <div id="input" class="col-md-4 col-md-4">
-        <input id="input1" type="text" max="25" placeholder="Votre Nom *">
-        <input id="input2" type="email" max="25" placeholder="Votre E-mail *">
-        <textarea name="comment" placeholder="Votre Message *" rows="10" cols="72"></textarea>
-        <input class="col-md-8 col-md-offset-2" id="corner-button" type="submit" value="Envoyer">
-      </div>
-    </form>
+        <div id="input" class="col-md-4 col-md-4">
+          <input aria-label="Votre Nom" id="input1" type="text" max="25" placeholder="Votre Nom *">
+          <input aria-label="Votre E-mail" id="input2" type="email" max="25" placeholder="Votre E-mail *">
+          <textarea aria-label="Votre Message" name="comment" placeholder="Votre Message *" rows="10"
+            cols="72"></textarea>
+          <input aria-label="bouton Envoyer" class="col-md-8 col-md-offset-2" id="corner-button" type="submit"
+            value="Envoyer">
+        </div>
+      </form>
     </div>
     <div id="ligne" class="col-md-8 col-md-offset-2"></div>
+
   </div>
 
   <script>
-  
+    chercher();
 
+    function chercher() {
 
-    function scrollTo( target ) {
-        if( target.length ) {
-            $("html, body").stop().animate( { scrollTop: target.offset().top }, 1500);
-        }
+      var url = "http://private-f3267-b0uba.apiary-mock.com/questions";
+      var req = new XMLHttpRequest();
+      req.open('GET', url, true);
+      req.addEventListener('readystatechange', changementEtat);
+      req.send();
+      console.log(url);
     }
-   // scrollTo( $("#contacte-bca") );
 
+    function changementEtat(data) {
+      if (data.target.readyState == 4) {
+
+        var previsions = JSON.parse(data.target.response);
+        console.log(previsions);
+        document.getElementById("api").innerHTML = previsions.titre;
+        document.getElementById("nsfrm").innerHTML = previsions.sections[0].choice;
+        document.getElementById("nsprd").innerHTML = previsions.sections[1].choice;
+        document.getElementById("nssrv").innerHTML = previsions.sections[2].choice;
+
+        document.getElementById("image3").setAttribute("src",previsions.sections[2].image);
+
+      }
+    }
   </script>
 
 </body>

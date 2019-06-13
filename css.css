@@ -1,204 +1,233 @@
 .corner-button {
-    letter-spacing: .02rem;
-    cursor: pointer;
-    background: transparent;
-    border: 2px solid currentColor;
-    font-size: 2.2rem;
-    color: #ffffff;
-    position: relative;
-    transition: color 0.3s;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
-  .corner-button:hover {
-    color: rgb(185, 185, 185);
-  }
-  .corner-button:hover::before {
-    width: 0;
-  }
-  .corner-button:hover::after {
-    height: 0;
-  }
-  .corner-button:active {
-    border-width: 0.25rem;
-  }
-  .corner-button span {
-    position: relative;
-    z-index: 2;
-  }
-  .corner-button::before, .corner-button::after {
-    content: '';
-    position: absolute;
-    background: transparent;
-    z-index: 1;
-    transition: all 0.3s;
-  }
-  .corner-button::before {
-    width: calc(100% - 3rem);
-    height: calc(101% + 1rem);
-    top: -0.5rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .corner-button::after {
-    height: calc(100% - 3rem);
-    width: calc(101% + 1rem);
-    left: -0.5rem;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-
-
-  /*------------------------------------------------------------------------------------------------------------*/ 
-
-  .corner-button2 {
-    letter-spacing: .02rem;
-    cursor: pointer;
-    background: transparent;
-    border: 2px solid currentColor;
-    font-size: 2.2rem;
-    color: #d92e19;
-    position: relative;
-    transition: color 0.3s;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    margin-top: 32px;
-    margin-left: 70px;
-    margin-bottom: 64px;
-  }
-  .corner-button2:hover {
-    color: #77261c;
-  }
-  .corner-button2:hover::before {
-    width: 0;
-  }
-  .corner-button2:hover::after {
-    height: 0;
-  }
-  .corner-button2:active {
-    border-width: 0.25rem;
-  }
-  .corner-button2 span {
-    position: relative;
-    z-index: 2;
-  }
-  .corner-button2::before, .corner-button::after {
-    content: '';
-    position: absolute;
-    background: transparent;
-    z-index: 1;
-    transition: all 0.3s;
-  }
-  .corner-button2::before {
-    width: calc(100% - 3rem);
-    height: calc(101% + 1rem);
-    top: -0.5rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .corner-button2::after {
-    height: calc(100% - 3rem);
-    width: calc(101% + 1rem);
-    left: -0.5rem;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-
-  /*------------------------------------------------------------------------------------------------------*/
-
-  #produit-bca {
-    background-color: #fafafa;
-    padding-bottom: 96px;
-  }
-
-  /*------------------------------------------------------------------------------------------------------*/
-
-  #service-bca {
-    padding-bottom: 148px;
-  }
-
-  /*------------------------------------------------------------------------------------------------------*/
-
-  #partenaire-bca {
-    background-color: #fafafa;
-    padding-top: 62px;
-    padding-bottom: 62px;
-  }
-/*------------------------------------------------------------------------------------------------------*/
-  #contacte-bca {
-  background-color: #c14333;
-    padding-bottom: 70px;
-  }
-
-
-  #prt1 {
-    color: #ffffff;
-    font-size: 60px;
-    margin-top: 100px;
-  }
-  #prt2 {
-    color: #ffffff;
-    font-size: 18px;
+  letter-spacing: .02rem;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid currentColor;
+  font-size: 2.2rem;
+  color: #ffffff;
+  position: relative;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
-  #input {
-    margin-top: 100px;
-    font-family: "brandon medium";
-    color: #bbbbbb;
-  }
-  
-  #input1 {
-    width : 100%;
-    height : 51px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
+.corner-button:hover {
+  color: #b9b9b9;
+}
 
-  #input2 {
-    width : 100%;
-    height : 51px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-    margin-bottom: 20px;
-  }
+.corner-button:hover::before {
+  width: 0;
+}
 
-  textarea {
-    width : 100%;
-  }
+.corner-button:hover::after {
+  height: 0;
+}
 
- 
-  #kl1 {
-    font-size: 16px;
-    margin-bottom: 50px;
-  } 
+.corner-button:active {
+  border-width: 0.25rem;
+}
 
-  #site {
-    margin-top: 60px;
+.corner-button span {
+  position: relative;
+  z-index: 2;
+}
 
-  }
+.corner-button::before, .corner-button::after {
+  content: '';
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
+.corner-button::before {
+  width: calc(100% - 3rem);
+  height: calc(101% + 1rem);
+  top: -0.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.corner-button::after {
+  height: calc(100% - 3rem);
+  width: calc(101% + 1rem);
+  left: -0.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+.corner-button2 {
+  letter-spacing: .02rem;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid currentColor;
+  font-size: 2.2rem;
+  color: #d92e19;
+  position: relative;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-top: 32px;
+  margin-left: 70px;
+  margin-bottom: 64px;
+}
+
+.corner-button2:hover {
+  color: #77261c;
+}
+
+.corner-button2:hover::before {
+  width: 0;
+}
+
+.corner-button2:hover::after {
+  height: 0;
+}
+
+.corner-button2:active {
+  border-width: 0.25rem;
+}
+
+.corner-button2 span {
+  position: relative;
+  z-index: 2;
+}
+
+.corner-button2::before, .corner-button::after {
+  content: '';
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.corner-button2::before {
+  width: calc(100% - 3rem);
+  height: calc(101% + 1rem);
+  top: -0.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.corner-button2::after {
+  height: calc(100% - 3rem);
+  width: calc(101% + 1rem);
+  left: -0.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+#produit-bca {
+  background-color: #fafafa;
+  padding-bottom: 96px;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+#service-bca {
+  padding-bottom: 148px;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+#partenaire-bca {
+  background-color: #fafafa;
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+#contacte-bca {
+  background-color: #c14333;
+  padding-bottom: 70px;
+}
+
+#prt1 {
+  color: #ffffff;
+  font-size: 60px;
+  margin-top: 100px;
+}
+
+#prt2 {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#input {
+  margin-top: 100px;
+  font-family: "brandon medium";
+  color: #bbbbbb;
+}
+
+#input1 {
+  width: 100%;
+  height: 51px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#input2 {
+  width: 100%;
+  height: 51px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+}
+
+#kl1 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+#kl2 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+#kl3 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+#kl4 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+#kl5 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+#site {
+  margin-top: 60px;
+}
 
 #ligne {
-  
   height: 1px;
   margin-top: 100px;
-  background-color: #87a0d2
-
+  background-color: #87a0d2;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
-
-
 #corner-button {
   margin-top: 20px;
   letter-spacing: .02rem;
@@ -208,52 +237,198 @@
   font-size: 2.2rem;
   color: #ffffff;
   position: relative;
+  -webkit-transition: color 0.3s;
   transition: color 0.3s;
   padding-left: 75px;
   padding-right: 75px;
   padding-top: 18px;
   padding-bottom: 18px;
 }
+
 #corner-button:hover {
-  color: rgb(185, 185, 185);
+  color: #b9b9b9;
 }
+
 #corner-button:hover::before {
   width: 0;
 }
+
 #corner-button:hover::after {
   height: 0;
 }
+
 #corner-button:active {
   border-width: 0.25rem;
 }
+
 #corner-button span {
   position: relative;
   z-index: 2;
 }
+
 #corner-button::before, #corner-button::after {
   content: '';
   position: absolute;
   background: transparent;
   z-index: 1;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 #corner-button::before {
   width: calc(100% - 3rem);
   height: calc(101% + 1rem);
   top: -0.5rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
+
 #corner-button::after {
   height: calc(100% - 3rem);
   width: calc(101% + 1rem);
   left: -0.5rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
+@font-face {
+  font-family: "brandon bold";
+  src: url(font/brandon-grotesque-bold.otf);
+}
 
+@font-face {
+  font-family: "brandon medium";
+  src: url(font/brandon-grotesque-medium.otf);
+}
 
+@font-face {
+  font-family: "brandon thin";
+  src: url(font/brandon-grotesque-thin.otf);
+}
 
+div {
+  font-family: "brandon thin";
+}
+
+strong {
+  font-family: "brandon bold";
+}
+
+button {
+  font-family: "brandon medium";
+}
+
+b {
+  font-family: "brandon thin";
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 16px;
+  font-family: "brandon bold";
+  color: #000000;
+}
+
+a {
+  color: #000000;
+}
+
+#bca {
+  background-image: url("img4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+#api {
+  font-family: "brandon bold";
+}
+
+#overlay {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.35;
+  margin-top: 0px;
+  z-index: 2;
+}
+
+#row1 {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: 9;
+  color: #ffffff;
+}
+
+#row1 .row {
+  text-align: center;
+}
+
+#box1 {
+  font-size: 32px;
+  margin-top: 80px;
+}
+
+#box2 {
+  margin-top: 45px;
+  font-size: 66px;
+}
+
+#box3 {
+  font-size: 60px;
+  margin-top: 75px;
+}
+
+#box5 {
+  font-size: 60px;
+  margin-top: 75px;
+}
+
+#ind {
+  font-size: 60px;
+  margin-top: 75px;
+}
+
+#button1 {
+  margin-top: 83px;
+  font-size: 32px;
+  background: transparent;
+}
+
+#formosa {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#pht1 {
+  margin-top: 75px;
+}
+
+#pht2 {
+  margin-top: 75px;
+}
+
+#pht3 {
+  margin-top: 75px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.corner-button {
+  font-family: "brandon bold";
+}
+
+.corner-button2 {
+  font-family: "brandon bold";
+}
+/*# sourceMappingURL=css.css.map */
